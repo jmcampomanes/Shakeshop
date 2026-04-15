@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meryenda Admin</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel" src="Sidebar.jsx"></script>
+
+    <script type="text/babel">
+        // This small script renders the component into the div above
+        import Sidebar from './Sidebar.jsx'; // Only if using a bundler
+        // For browser-only (no bundler), you'll need to remove the "export default" 
+        // from Sidebar.jsx and just call:
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<Sidebar />);
+    </script>
+</body>
+</html>
